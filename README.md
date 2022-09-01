@@ -17,4 +17,4 @@ App.js'de görüldüğü üzere CoinFlipper adlı bir component render ediyoruz.
 
 #### Todos
 
-- [ ] Yazı ve Tura sayıları canlı hale getirilecek.
+- [x] Yazı ve Tura sayıları canlı hale getirilecek.

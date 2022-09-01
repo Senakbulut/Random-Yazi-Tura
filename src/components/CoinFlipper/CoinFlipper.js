@@ -12,7 +12,9 @@ class CoinFlipper extends Component {
     this.state = {
       side: sec[0],
       flipping: false,
-      count: 0
+      count: 0,
+      headsCount: 0,
+      tailsCount: 0
     };
   }
  
@@ -25,10 +27,23 @@ class CoinFlipper extends Component {
       this.setState({
         side: randomAt
       });
-      }), 1000);
+    }), 1000);
     this.setState({
       count:this.state.count + 1
     })
+    setTimeout(() =>{
+      if(this.state.side === 'yazi'){
+        this.setState({
+          headsCount:this.state.headsCount + 1
+        })
+      }else if(this.state.side === 'tura'){
+        this.setState({
+          tailsCount:this.state.tailsCount + 1
+        })
+      }
+    },1150);
+    
+    
   };
 
   render() {
@@ -42,9 +57,8 @@ class CoinFlipper extends Component {
           Toplam
           <strong> {this.state.count} </strong>
           atıştan <br/>
-          <strong> 3 </strong>ü tura
-          <strong> 2 </strong>
-          si yazı geldi.
+          <strong> {this.state.tailsCount} </strong>tura,
+          <strong> {this.state.headsCount} </strong>yazı geldi.
         </p>
       </div>
     );
