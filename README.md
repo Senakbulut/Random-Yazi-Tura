@@ -2,9 +2,9 @@
 
 Yalnızca bir madeni paraya ihtiyaç duyulan, oldukça kolay oynanabilecek ve dünyanın hemen her yerinde yaygın olan yazı tura oyununu React ile yapalım.
 
-![Yazi Tura App](yazi-tura.gif)
-
 ### [Demo](https://random-yazi-tura.vercel.app/)
+
+![Yazi Tura App](yazi-tura.gif)
 
 ### Proje Nasıl Çalıştırılır
 
